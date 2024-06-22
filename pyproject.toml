@@ -9,7 +9,6 @@ readme = "README.md"
 python = "^3.12"
 fake-useragent = "^1.5.1"
 requests = "^2.32.3"
-datetime = "^5.5"
 
 
 [build-system]

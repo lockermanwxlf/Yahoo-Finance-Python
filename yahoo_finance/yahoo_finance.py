@@ -28,21 +28,16 @@ def get_stock_history(
     to_date : The date the history stops at. Today by default.
     
     interval: '1d' (default), '1wk', or '1mo'. These strings are contained in `Intervals`.
-    
-    session : Optional parameter if you want to pass in a `requests.Session`.
-    Otherwise `requests.get` is used.
 
     Returns
     -------
-    string
-        a value in a string
+    list[dict]
+        dict contains 'Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume'.
 
     Raises
     ------
     HTTPError
-        when a key error
-    OtherError
-        when an other error
+        when `response.raise_for_status()` raises. This is not caught by the function.
     '''
     global __session
     

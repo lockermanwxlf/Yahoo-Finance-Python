@@ -76,7 +76,7 @@ def get_stock_history(
     for line in lines:
         values = line.decode().split(',')
         item = {
-            columns[i]: values[i] for i in range(n_columns)
+            columns[i]: datetime.datetime.fromisoformat(values[i]) if columns[i] == 'Date' else float(values[i]) for i in range(n_columns)
         }
         history.append(item)
         

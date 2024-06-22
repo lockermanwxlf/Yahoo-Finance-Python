@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yhfinance"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["lockermanwxlf <95518889+lockermanwxlf@users.noreply.github.com>"]
 readme = "README.md"

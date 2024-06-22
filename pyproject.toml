@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "yahoo-finance"
+name = "yhfinance"
 version = "0.1.0"
 description = ""
 authors = ["lockermanwxlf <95518889+lockermanwxlf@users.noreply.github.com>"]
